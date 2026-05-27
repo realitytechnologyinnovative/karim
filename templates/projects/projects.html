@@ -1,0 +1,123 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Projects | Karim &amp; Associates{% endblock %}
+{% block meta_description %}Selected training and consultancy engagements delivered by Karim &amp; Associates Limited.{% endblock %}
+{% block content %}
+    {% include "partials/breadcrumbs.html" with heading="PROJECTS" only %}
+    <!-- Projects Area Start -->
+    <div class="projects-section ptb-120">
+        <div class="container">
+            <div class="row custom-row grid fix">
+                {% for project in projects %}
+                {% cycle '13' '14' '15' '16' '17' '18' '19' '20' as project_thumb silent %}
+                <div class="col-lg-4 col-md-6 col-12 grid-item">
+                    <div class="project-style single-project">
+                        <div class="project-image">
+                            {% if project.image %}
+                            <img src="{{ project.image.url }}" alt="{{ project.title }}" />
+                            {% else %}
+                            <img src="{% static 'img/project/' %}{{ project_thumb }}.jpg" alt="" />
+                            {% endif %}
+                        </div>
+                        <div class="project-hover">
+                            {% if project.image %}
+                            <a class="project-icon image-popup-no-margins" href="{{ project.image.url }}"><img src="{% static 'img/icons/src.png' %}" alt=""></a>
+                            {% else %}
+                            <a class="project-icon image-popup-no-margins" href="{% static 'img/project/' %}{{ project_thumb }}.jpg"><img src="{% static 'img/icons/src.png' %}" alt=""></a>
+                            {% endif %}
+                            <div class="project-text">
+                                <h4><a href="{% url 'projects:detail' project.slug %}">{{ project.title }}</a></h4>
+                                <p>{{ project.description|truncatewords:22 }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% empty %}
+                <div class="col-lg-4 col-md-6 col-12 grid-item">
+                    <div class="project-style">
+                        <div class="project-image">
+                            <img src="{% static 'img/project/13.jpg' %}" alt="" />
+                        </div>
+                        <div class="project-hover">
+                            <a class="project-icon image-popup-no-margins" href="{% static 'img/project/13.jpg' %}"><img src="{% static 'img/icons/src.png' %}" alt=""></a>
+                            <div class="project-text">
+                                <h4><a href="{% url 'projects:detail' 'lagos-corridor-transit-esia' %}">Lagos corridor rapid transit — ESIA</a></h4>
+                                <p>Baseline ecology and social surveys for a BRT corridor.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="fix col-12 text-center">
+                <button class="default-button more">LOAD MORE <i class="fa fa-angle-double-right"></i></button>
+            </div>
+        </div>
+    </div>
+    <!-- Projects Area End -->
+    <!--Start of Client area-->
+    <div class="client-area ptb-40 bg-light">
+        <div class="container">
+            <div class="client-carousel">
+                {% for cp in client_partners %}
+                <div class="col-12">
+                    <div class="single-client block">
+                        <a href="{% if cp.website %}{{ cp.website }}{% else %}#{% endif %}" class="block" aria-label="{{ cp.name }}" {% if cp.website %}target="_blank" rel="noopener"{% endif %}>
+                            <span class="p-images"><img src="{{ cp.logo.url }}" alt="{{ cp.name }}"></span>
+                            <span class="s-images"><img src="{{ cp.logo.url }}" alt="{{ cp.name }}"></span>
+                        </a>
+                    </div>
+                </div>
+                {% empty %}
+                <div class="col-12">
+                    <div class="single-client block">
+                        <a href="#" class="block">
+                            <span class="p-images"><img src="{% static 'img/client/1.png' %}" alt=""></span>
+                            <span class="s-images"><img src="{% static 'img/client/1-hover.png' %}" alt=""></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="single-client block">
+                        <a href="#" class="block">
+                            <span class="p-images"><img src="{% static 'img/client/2.png' %}" alt=""></span>
+                            <span class="s-images"><img src="{% static 'img/client/2-hover.png' %}" alt=""></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="single-client block">
+                        <a href="#" class="block">
+                            <span class="p-images"><img src="{% static 'img/client/3.png' %}" alt=""></span>
+                            <span class="s-images"><img src="{% static 'img/client/3-hover.png' %}" alt=""></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="single-client block">
+                        <a href="#" class="block">
+                            <span class="p-images"><img src="{% static 'img/client/4.png' %}" alt=""></span>
+                            <span class="s-images"><img src="{% static 'img/client/4-hover.png' %}" alt=""></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="single-client block">
+                        <a href="#" class="block">
+                            <span class="p-images"><img src="{% static 'img/client/5.png' %}" alt=""></span>
+                            <span class="s-images"><img src="{% static 'img/client/5-hover.png' %}" alt=""></span>
+                        </a>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <button type="button" id="client-prev" class="default-button me-2">Previous</button>
+                    <button type="button" id="client-next" class="default-button">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End of Client area-->
+{% endblock %}

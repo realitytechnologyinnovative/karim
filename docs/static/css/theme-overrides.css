@@ -1,0 +1,487 @@
+/* karimandassociates theme refinements — loaded after theme CSS */
+
+:root {
+  --karimandassociates-section-space: 3.5rem;
+  --karimandassociates-transition: 0.25s ease;
+  --brand-primary: #0852a7;
+  --brand-secondary: #4383cd;
+  --brand-accent: #ffffff;
+}
+
+/* Brand palette overrides */
+.bg-green,
+.bg-blue,
+.blue-bg {
+  background: var(--brand-primary) !important;
+}
+
+.overlay-green:before,
+.overlay-blue:before,
+.overlay-blue-2:before,
+.overlay-blue-3:before {
+  background: rgba(8, 82, 167, 0.9) !important;
+}
+
+.about-text > h3 > span,
+.information-text > h3 > span,
+.feature-text > h3 > span,
+.single-content .single-title,
+.service-text > h4 {
+  color: var(--brand-primary) !important;
+}
+
+.main-menu ul li:hover > a,
+.main-menu ul li.active > a,
+.main-menu ul li > a:focus,
+.footer-list a:hover {
+  color: var(--brand-secondary) !important;
+}
+
+.default-button {
+  border-color: var(--brand-primary) !important;
+  color: var(--brand-primary) !important;
+}
+
+.default-button:hover,
+.default-button:focus {
+  background: var(--brand-primary) !important;
+  border-color: var(--brand-primary) !important;
+  color: var(--brand-accent) !important;
+}
+
+.btn-white {
+  background: var(--brand-accent) !important;
+  border-color: var(--brand-accent) !important;
+  color: var(--brand-primary) !important;
+}
+
+.btn-white:hover,
+.btn-white:focus {
+  background: var(--brand-secondary) !important;
+  border-color: var(--brand-secondary) !important;
+  color: var(--brand-accent) !important;
+}
+
+.text-content .banner-btn,
+.button.banner-btn {
+  background: var(--brand-primary) !important;
+  border-color: var(--brand-primary) !important;
+  color: var(--brand-accent) !important;
+}
+
+.text-content .banner-btn:hover,
+.button.banner-btn:hover {
+  background: var(--brand-secondary) !important;
+  border-color: var(--brand-secondary) !important;
+  color: var(--brand-accent) !important;
+}
+
+/* Global color mapping to keep all pages on-brand */
+a,
+.text-theme {
+  color: var(--brand-primary);
+}
+
+a:hover,
+a:focus {
+  color: var(--brand-secondary);
+}
+
+.default-bg {
+  background: var(--brand-secondary) !important;
+}
+
+.white,
+.text-white {
+  color: var(--brand-accent) !important;
+}
+
+.main-menu ul li > a,
+.mobile-menu-area .mean-container a.meanmenu-reveal {
+  color: var(--brand-accent) !important;
+}
+
+.mainmenu-area,
+.mean-container .mean-bar,
+.mean-container .mean-nav,
+.mean-container .mean-nav ul li a.mean-expand {
+  background: var(--brand-primary) !important;
+}
+
+.mean-container .mean-nav ul li a {
+  color: var(--brand-accent) !important;
+  border-top-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.mean-container .mean-nav ul li a:hover,
+.mean-container .mean-nav ul li a:focus {
+  background: var(--brand-secondary) !important;
+}
+
+.section-title h2,
+.breadcrumbs-text h2,
+.sidebar-widget-title h5,
+.card-title a,
+.post-info .author,
+.service-text h4,
+.single-content .single-title,
+.feature-text h2,
+.about-text h2,
+.information-text h2 {
+  color: var(--brand-primary) !important;
+}
+
+.breadcrumbs ul li,
+.breadcrumbs ul li a {
+  color: var(--brand-accent) !important;
+}
+
+.single-item:hover .service-item-image .default-button,
+.service-item-image .default-button {
+  background: var(--brand-primary) !important;
+  border-color: var(--brand-primary) !important;
+  color: var(--brand-accent) !important;
+}
+
+.single-item:hover .service-item-image .default-button:hover,
+.service-item-image .default-button:hover {
+  background: var(--brand-secondary) !important;
+  border-color: var(--brand-secondary) !important;
+}
+
+.member-text,
+.team-style-2 .member-text {
+  background: var(--brand-primary) !important;
+}
+
+.owl-nav div:hover,
+.owl-dot.active,
+.owl-dot:hover {
+  background: var(--brand-secondary) !important;
+}
+
+/* Disable hover animation/effects on team member cards */
+.single-team-member,
+.member-text,
+.link-effect,
+.member-text > p {
+  transition: none !important;
+}
+
+.single-team-member:hover .member-text {
+  padding: 13px 0 !important;
+}
+
+.single-team-member:hover .member-text > p {
+  bottom: -75px !important;
+  visibility: hidden !important;
+  z-index: -99 !important;
+}
+
+.single-team-member .link-effect,
+.single-team-member:hover .link-effect {
+  bottom: -70px !important;
+  visibility: hidden !important;
+  z-index: -1 !important;
+}
+
+/* About tabs: mission, vision, values use secondary color */
+.about-tab-menu ul li a {
+  background: var(--brand-primary) !important;
+  border-color: var(--brand-primary) !important;
+  color: var(--brand-accent) !important;
+}
+
+.about-tab-menu ul li a:hover,
+.about-tab-menu ul li a:focus {
+  background: var(--brand-primary) !important;
+  border-color: var(--brand-primary) !important;
+  color: var(--brand-accent) !important;
+}
+
+.about-tab-menu ul li a.active {
+  background: var(--brand-secondary) !important;
+  border-color: var(--brand-secondary) !important;
+  color: var(--brand-accent) !important;
+}
+
+/* About tab content: slightly larger and darker text */
+.about-banner-text .tab-content p,
+.about-banner-text .tab-content li {
+  font-size: 17px !important;
+  line-height: 1.7 !important;
+  color: #24364d !important;
+}
+
+/* Ensure button text is white across the site */
+.default-button,
+.default-button:hover,
+.default-button:focus,
+.button.banner-btn,
+.button.banner-btn:hover,
+.button.banner-btn:focus,
+.text-content .banner-btn,
+.text-content .banner-btn:hover,
+.text-content .banner-btn:focus,
+.btn-white,
+.btn-white:hover,
+.btn-white:focus {
+  color: var(--brand-accent) !important;
+}
+
+/* Keep white-button variant readable with white text */
+.btn-white {
+  background: var(--brand-secondary) !important;
+  border-color: var(--brand-secondary) !important;
+}
+
+.team-more-btn {
+  border-radius: 5px !important;
+  color: var(--brand-secondary) !important;
+}
+
+#client-prev,
+#client-next {
+  background: var(--brand-secondary) !important;
+  border-color: var(--brand-secondary) !important;
+  color: var(--brand-accent) !important;
+}
+
+main img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Contact: static location panel (replaces embedded map API) */
+.karimandassociates-static-location {
+  width: 100%;
+  min-height: 455px;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  background: linear-gradient(135deg, var(--brand-accent) 0%, #d9e8f9 100%);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.karimandassociates-static-location__inner {
+  padding: 2.5rem 2rem;
+  max-width: 42rem;
+}
+
+.karimandassociates-static-location__title {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+  font-size: 1.35rem;
+  font-weight: 600;
+}
+
+.karimandassociates-static-location__list {
+  margin: 0 0 1.25rem;
+  padding-left: 1.25rem;
+  line-height: 1.6;
+}
+
+.karimandassociates-static-location__list li + li {
+  margin-top: 1rem;
+}
+
+.karimandassociates-static-location__hours {
+  margin-bottom: 0.75rem;
+}
+
+.karimandassociates-static-location__note {
+  margin-bottom: 0;
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+.karimandassociates-static-location .text-muted {
+  font-size: 0.9em;
+  opacity: 0.8;
+}
+
+.header-area .quote-btn .button {
+  display: inline-block;
+  padding: 0.6rem 1.25rem;
+  text-decoration: none;
+  border-radius: 2px;
+  transition: opacity var(--karimandassociates-transition), transform var(--karimandassociates-transition);
+}
+
+/* Keep header logo pinned to the left */
+.logo-wrapper {
+  text-align: left !important;
+}
+
+.logo {
+  text-align: left !important;
+}
+
+.logo > a {
+  display: inline-block;
+  margin-left: 0 !important;
+}
+
+.logo img {
+  margin-left: 0 !important;
+}
+
+/* Keep header logo inside white panel (no climbing into blue strip) */
+.header-main-wrapper {
+  align-items: center;
+}
+
+.header-main .logo {
+  padding: 16px 0 !important;
+  position: relative;
+  z-index: 2;
+}
+
+.header-main .logo img {
+  display: block;
+  max-height: 84px;
+  width: auto;
+  max-width: 100%;
+}
+
+.header-area .quote-btn .button:hover {
+  opacity: 0.92;
+  transform: translateY(-1px);
+}
+
+.main-menu ul li > a,
+.footer-list a {
+  transition: color var(--karimandassociates-transition), opacity var(--karimandassociates-transition);
+}
+
+.footer-list a:hover {
+  opacity: 0.85;
+}
+
+.footer-logo {
+  display: inline-block;
+  padding: 10px 12px;
+  border-radius: 14px;
+  background: #ffffff;
+  box-shadow:
+    8px 8px 16px rgba(5, 40, 84, 0.45),
+    -6px -6px 14px rgba(255, 255, 255, 0.15),
+    0 0 18px rgba(67, 131, 205, 0.35);
+}
+
+.footer-logo img {
+  display: block;
+  max-height: 72px;
+  width: auto;
+  filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.35)) saturate(1.1) contrast(1.08);
+}
+
+.footer-logo:hover {
+  box-shadow:
+    10px 10px 18px rgba(5, 40, 84, 0.5),
+    -7px -7px 15px rgba(255, 255, 255, 0.2),
+    0 0 22px rgba(67, 131, 205, 0.45);
+}
+
+/* Client logos: no border + consistent size */
+.client-carousel .single-client {
+  border: none !important;
+  background: transparent !important;
+}
+
+.client-carousel .single-client a {
+  width: 100px !important;
+  height: 100px !important;
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.client-carousel .single-client img {
+  width: 100px !important;
+  height: 100px !important;
+  object-fit: contain;
+}
+
+/* Header contact strip leveling */
+@media (min-width: 992px) {
+  .header-main-content {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+    padding-top: 32px !important;
+  }
+
+  .header-info {
+    float: none !important;
+    width: auto !important;
+    padding-left: 0 !important;
+    display: flex;
+    align-items: center;
+    text-align: left !important;
+  }
+
+  .header-info > img {
+    top: 0 !important;
+    padding-right: 10px;
+    width: 34px;
+    height: 34px;
+    object-fit: contain;
+  }
+
+  .header-info-text {
+    display: inline-flex !important;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2px;
+  }
+
+  .header-info-text > h4 {
+    line-height: 1.2 !important;
+    margin: 0 !important;
+  }
+
+  .header-info-text > span {
+    line-height: 1.2 !important;
+    margin: 0 !important;
+  }
+}
+
+.single-service,
+.single-blog,
+.single-project,
+.single-footer-widget {
+  transition: transform var(--karimandassociates-transition), box-shadow var(--karimandassociates-transition);
+}
+
+@media (min-width: 992px) {
+  .single-service:hover,
+  .single-blog:hover {
+    transform: translateY(-4px);
+  }
+}
+
+.ptb-110,
+.ptb-100,
+.ptb-90,
+.ptb-80 {
+  scroll-margin-top: 1rem;
+}
+
+.text-content .banner-btn,
+.button.banner-btn {
+  transition: background-color var(--karimandassociates-transition), color var(--karimandassociates-transition),
+    transform var(--karimandassociates-transition);
+}
+
+.text-content .banner-btn:hover,
+.button.banner-btn:hover {
+  transform: translateY(-2px);
+}
+
+h1,
+h2,
+h3,
+.title1,
+.title2 {
+  letter-spacing: 0.02em;
+}

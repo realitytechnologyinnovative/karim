@@ -1,0 +1,355 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Home | Karim &amp; Associates{% endblock %}
+{% block meta_description %}Karim &amp; Associates Limited provides accredited training and consultancy services in accounting, finance, management, governance, and human capital development.{% endblock %}
+{% block content %}
+<div class="slider-area">
+    <div class="slider-wrapper">
+        <div class="single-slide" style="background-image: url('{% static 'img/slider/1.jpg' %}');">
+            <div class="banner-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="text-content-wrapper">
+                                <div class="text-content text-center">
+                                    <h3 class="title1 pt-65">KARIM &amp; ASSOCIATES LIMITED</h3>
+                                    <h1 class="title2">Training And Consultancy For Measurable Impact</h1>
+                                    <p>We empower organizations through practical training, strategic advisory, and professional services across accounting, finance, governance, and human capital development.</p>
+                                    <div class="banner-readmore">
+                                        <a class="button banner-btn" href="{% url 'services:list' %}">VIEW SERVICES</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="single-slide" style="background-image: url('{% static 'img/slider/2.jpg' %}');">
+            <div class="banner-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="text-content-wrapper">
+                                <div class="text-content text-center">
+                                    <h3 class="title1 pt-65">PROFESSIONAL EXCELLENCE</h3>
+                                    <h1 class="title2">Capacity Building For Institutions</h1>
+                                    <p>We design practical training and advisory programs that improve leadership, governance, and organizational performance.</p>
+                                    <div class="banner-readmore">
+                                        <a class="button banner-btn" href="{% url 'services:list' %}">VIEW SERVICES</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="single-slide" style="background-image: url('{% static 'img/slider/3.jpg' %}');">
+            <div class="banner-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="text-content-wrapper">
+                                <div class="text-content text-center">
+                                    <h3 class="title1 pt-65">CLIENT-CENTRIC DELIVERY</h3>
+                                    <h1 class="title2">Tailored Training And Consultancy</h1>
+                                    <p>From accounting and finance to risk, compliance, and human capital development, we deliver measurable value.</p>
+                                    <div class="banner-readmore">
+                                        <a class="button banner-btn" href="{% url 'core:contact' %}">CONTACT US</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="about-area bg-1 pt-120 pb-105">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="about-text">
+                    <h3>We are <span>Karim &amp; Associates</span></h3>
+                    <h2>Accredited Human Capital Development Firm</h2>
+                    <p>Established in 2014, Karim &amp; Associates Limited is a multidisciplinary firm delivering high-impact training and consultancy services for public and private sector institutions.</p>
+                    <p>Our approach combines technical depth with practical implementation to improve capability, compliance, and operational performance.</p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="about-text-right">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <div class="single-content">
+                                <h4 class="single-title">Mission</h4>
+                                <p>Empower individuals and organizations through practical training and advisory services.</p>
+                            </div>
+                            <div class="single-content">
+                                <h4 class="single-title">Vision</h4>
+                                <p>Be a premier provider of innovative and impactful training and consultancy services.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <div class="single-content">
+                                <h4 class="single-title">Core Values</h4>
+                                <p>Excellence, Innovation, Integrity, Collaboration, and Impact.</p>
+                            </div>
+                            <div class="single-content">
+                                <h4 class="single-title">Delivery Focus</h4>
+                                <p>Needs-based, client-specific programs with measurable outcomes.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="service-area pt-120 pb-105">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+                <div class="section-title text-center mb-55">
+                    <h2>Our Core Services</h2>
+                    <p>Integrated training and advisory services delivered by a multidisciplinary team.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="single-item">
+                    <span class="service-image"><img src="{% static 'img/icons/plan.png' %}" alt=""></span>
+                    <div class="service-text">
+                        <h4>Accounting &amp; Finance Training</h4>
+                        <p>Financial reporting, audit, tax, and financial management programs.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="single-item">
+                    <span class="service-image"><img src="{% static 'img/icons/cash.png' %}" alt=""></span>
+                    <div class="service-text">
+                        <h4>Management Consultancy</h4>
+                        <p>Strategy, leadership development, and organizational effectiveness support.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="single-item">
+                    <span class="service-image"><img src="{% static 'img/icons/brif.png' %}" alt=""></span>
+                    <div class="service-text">
+                        <h4>Governance &amp; Compliance</h4>
+                        <p>Corporate governance, anti-corruption, and regulatory compliance training.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="single-item">
+                    <span class="service-image"><img src="{% static 'img/icons/hand.png' %}" alt=""></span>
+                    <div class="service-text">
+                        <h4>Human Capital Development</h4>
+                        <p>Talent optimization, communication, performance, and workforce capability programs.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="single-item">
+                    <span class="service-image"><img src="{% static 'img/icons/commo.png' %}" alt=""></span>
+                    <div class="service-text">
+                        <h4>Risk &amp; Project Management</h4>
+                        <p>Risk frameworks, project planning, execution, and evaluation support.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="single-item">
+                    <span class="service-image"><img src="{% static 'img/icons/reti.png' %}" alt=""></span>
+                    <div class="service-text">
+                        <h4>Digital &amp; Specialized Programs</h4>
+                        <p>Technology transformation, procurement, ESG, and executive study tours.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="fun-factor-area bg-3 overlay-green pt-100 fix pb-95">
+    <div class="container">
+        <div class="fun-custom-row">
+            <div class="fun-custom-column">
+                <div class="single-fun-factor">
+                    <div class="text-icon block">
+                        <img src="{% static 'img/icons/check.png' %}" alt="" class="mr-15">
+                        <h2><span class="counter">12</span>+</h2>
+                    </div>
+                    <h4>Years Since 2014</h4>
+                </div>
+            </div>
+            <div class="fun-custom-column">
+                <div class="single-fun-factor">
+                    <div class="text-icon block">
+                        <img src="{% static 'img/icons/face.png' %}" alt="" class="mr-15">
+                        <h2><span class="counter">3000</span>+</h2>
+                    </div>
+                    <h4>Personnel Trained</h4>
+                </div>
+            </div>
+            <div class="fun-custom-column">
+                <div class="single-fun-factor">
+                    <div class="text-icon block">
+                        <img src="{% static 'img/icons/teams.png' %}" alt="" class="mr-15">
+                        <h2><span class="counter">32</span></h2>
+                    </div>
+                    <h4>Employees</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="testmonial-carousel bg-light ptb-70">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+                <div class="section-title text-center mb-55">
+                    <h2>Client Testimonials</h2>
+                    <p>What organizations say about our training and consultancy services.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+                <div class="testmonial-wrapper text-center">
+                    {% for t in testimonials %}
+                    <div class="single-testi">
+                        <div class="testi-img">
+                            {% if t.image %}
+                            <img src="{{ t.image.url }}" alt="{{ t.client_name }}">
+                            {% else %}
+                            <img src="{% static 'img/testi/1.jpg' %}" alt="{{ t.client_name }}">
+                            {% endif %}
+                        </div>
+                        <div class="testi-text">
+                            <p>{{ t.quote }}</p>
+                            <h5>{{ t.client_name }}</h5>
+                            <span>{{ t.person_name }}{% if t.person_title %}, {{ t.person_title }}{% endif %}</span>
+                        </div>
+                    </div>
+                    {% empty %}
+                    <div class="single-testi">
+                        <div class="testi-img">
+                            <img src="{% static 'img/testi/1.jpg' %}" alt="">
+                        </div>
+                        <div class="testi-text">
+                            <p>Karim &amp; Associates provided exceptional training services that improved our team capability, operational efficiency, and employee engagement.</p>
+                            <h5>Axis Group Ltd</h5>
+                            <span>Saiki Oloruntoba, GM HR</span>
+                        </div>
+                    </div>
+                    <div class="single-testi">
+                        <div class="testi-img">
+                            <img src="{% static 'img/testi/1.jpg' %}" alt="">
+                        </div>
+                        <div class="testi-text">
+                            <p>The leadership and strategy sessions were insightful, practical, and impactful. The hands-on approach made learning highly engaging.</p>
+                            <h5>Akewa Global Services Ltd</h5>
+                            <span>Edokpayi Erhunmwunsee, Executive Director</span>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="advertise-area bg-2 overlay-green">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+                <div class="advertise-text text-white text-center">
+                    <h2>Let's Design A Solution For Your Organization</h2>
+                    <p>Share your training or consulting goals and we will develop a tailored program that fits your needs and timeline.</p>
+                    <a href="{% url 'core:contact' %}" class="default-button btn-white">CONTACT US</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="client-area bg-light pt-100 pb-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+                <div class="section-title text-center mb-55">
+                    <h2>Our Clients and Partners</h2>
+                </div>
+            </div>
+        </div>
+        <div class="client-carousel">
+            {% for cp in client_partners %}
+            <div class="col-12">
+                <div class="single-client block">
+                    <a href="{% if cp.website %}{{ cp.website }}{% else %}#{% endif %}" class="block" aria-label="{{ cp.name }}" {% if cp.website %}target="_blank" rel="noopener"{% endif %}>
+                        <span class="p-images"><img src="{{ cp.logo.url }}" alt="{{ cp.name }}"></span>
+                        <span class="s-images"><img src="{{ cp.logo.url }}" alt="{{ cp.name }}"></span>
+                    </a>
+                </div>
+            </div>
+            {% empty %}
+            <div class="col-12">
+                <div class="single-client block">
+                    <a href="#" class="block" aria-label="Client logo 1">
+                        <span class="p-images"><img src="{% static 'img/client/1.png' %}" alt="Client logo"></span>
+                        <span class="s-images"><img src="{% static 'img/client/1-hover.png' %}" alt="Client logo"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="single-client block">
+                    <a href="#" class="block" aria-label="Client logo 2">
+                        <span class="p-images"><img src="{% static 'img/client/2.png' %}" alt="Client logo"></span>
+                        <span class="s-images"><img src="{% static 'img/client/2-hover.png' %}" alt="Client logo"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="single-client block">
+                    <a href="#" class="block" aria-label="Client logo 3">
+                        <span class="p-images"><img src="{% static 'img/client/3.png' %}" alt="Client logo"></span>
+                        <span class="s-images"><img src="{% static 'img/client/3-hover.png' %}" alt="Client logo"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="single-client block">
+                    <a href="#" class="block" aria-label="Client logo 4">
+                        <span class="p-images"><img src="{% static 'img/client/4.png' %}" alt="Client logo"></span>
+                        <span class="s-images"><img src="{% static 'img/client/4-hover.png' %}" alt="Client logo"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="single-client block">
+                    <a href="#" class="block" aria-label="Client logo 5">
+                        <span class="p-images"><img src="{% static 'img/client/5.png' %}" alt="Client logo"></span>
+                        <span class="s-images"><img src="{% static 'img/client/5-hover.png' %}" alt="Client logo"></span>
+                    </a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="row mt-4">
+            <div class="col-12 text-center">
+                <button type="button" id="client-prev" class="default-button me-2">Previous</button>
+                <button type="button" id="client-next" class="default-button">Next</button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

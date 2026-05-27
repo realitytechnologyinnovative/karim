@@ -1,0 +1,112 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}About | Karim &amp; Associates{% endblock %}
+{% block meta_description %}Learn about Karim &amp; Associates Limited, our mission, vision, values, and leadership team.{% endblock %}
+{% block content %}
+{% include "partials/breadcrumbs.html" with heading="ABOUT US" crumb="ABOUT" only %}
+
+<div class="about-four-area bg-5 pt-100 pb-105">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="about-text">
+                    <h3>We are <span>Karim &amp; Associates</span></h3>
+                    <h2>Multidisciplinary Training And Consultancy Firm</h2>
+                    <h4>Founded in 2014, we deliver practical, high-impact solutions across accounting, finance, management, governance, and human capital development.</h4>
+                    <p>Our team combines academic depth with industry experience to support organizations in the public and private sectors.</p>
+                    <p>We focus on tailored service delivery that turns strategy into measurable improvements in competence, compliance, and performance.</p>
+                    <div class="mt-3">
+                        {% if profile_documents %}
+                            <a href="{{ profile_documents.0.file.url }}" class="default-button" download>Download Profile</a>
+                        {% else %}
+                            <a href="{% static 'profiles/Karim and Associates Training Profile.pdf' %}" class="default-button" download>Download Profile</a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="about-banner-area bg-7">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 col-12">
+                <div class="about-banner-text">
+                    <div class="about-tab-menu">
+                        <ul role="tablist" class="nav nav-tabs">
+                            <li role="presentation"><a class="active" data-bs-toggle="tab" role="tab" aria-controls="mission" href="#mission">Our Mission</a></li>
+                            <li role="presentation"><a data-bs-toggle="tab" role="tab" aria-controls="vision" href="#vision">Our Vision</a></li>
+                            <li role="presentation"><a data-bs-toggle="tab" role="tab" aria-controls="values" href="#values">Our Values</a></li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="tab-content">
+                        <div id="mission" class="tab-pane fade show active" role="tabpanel">
+                            <p>To empower individuals and organizations through practical training, professional development, and advisory services.</p>
+                            <p>We deliver programs that improve institutional capability, ethical leadership, and sustainable growth.</p>
+                        </div>
+                        <div id="vision" class="tab-pane fade" role="tabpanel">
+                            <p>To be a premier provider of innovative and impactful training and consultancy services.</p>
+                            <p>We aim to drive excellence across accounting, finance, management, governance, and human capital development.</p>
+                        </div>
+                        <div id="values" class="tab-pane fade" role="tabpanel">
+                            <ol class="ps-3">
+                                <li><strong>Excellence</strong> - highest standards in all services.</li>
+                                <li><strong>Innovation</strong> - continuous improvement in methods and delivery.</li>
+                                <li><strong>Integrity</strong> - ethical and transparent professional conduct.</li>
+                                <li><strong>Collaboration</strong> - client-focused partnership for shared success.</li>
+                                <li><strong>Impact</strong> - measurable improvement for people and institutions.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="team-area fix pt-120 pb-120">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+                <div class="section-title text-center mb-95">
+                    <h2>Leadership Team</h2>
+                    <p>Experienced partners and associates guiding quality delivery across all engagements.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row gy-4">
+            <div class="col-lg-3 col-md-6">
+                <div class="single-team-member">
+                    <div class="member-image"><img src="{% static 'img/team/1.png' %}" alt=""></div>
+                    <div class="member-text"><h3>Prof. Shehu Usman Hassan</h3><span>Principal Partner/CEO</span></div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="single-team-member">
+                    <div class="member-image"><img src="{% static 'img/team/2.png' %}" alt=""></div>
+                    <div class="member-text"><h3>Prof. Muhammad Liman</h3><span>Partner</span></div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="single-team-member">
+                    <div class="member-image"><img src="{% static 'img/team/3.png' %}" alt=""></div>
+                    <div class="member-text"><h3>Abbas Usman, PhD</h3><span>Partner</span></div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="single-team-member">
+                    <div class="member-image"><img src="{% static 'img/team/4.png' %}" alt=""></div>
+                    <div class="member-text"><h3>Saifullahi A. Mazadu, PhD</h3><span>Partner</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-12 text-center">
+                <a href="{% url 'core:team' %}" class="default-button team-more-btn">View More Team Members</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

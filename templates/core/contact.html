@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Contact | Karim &amp; Associates{% endblock %}
+{% block meta_description %}Contact Karim &amp; Associates Limited for training and consultancy services in accounting, finance, governance, and human capital development.{% endblock %}
+{% block content %}
+{% include "partials/breadcrumbs.html" with heading="CONTACT US" crumb="CONTACT" only %}
+
+<div class="google-map-area pt-120">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="contacts" class="map-area">
+                    <iframe
+                        title="Karim and Associates Abuja Office Map"
+                        src="https://www.google.com/maps?q=Plot+1015+Gwandal+Centre+Fria+Close+Off+Customs+Close+Wuse+2+Abuja&output=embed"
+                        width="100%"
+                        height="455"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1 col-md-12">
+                <div class="contact-information">
+                    <div class="single-contact-info">
+                        <div class="contents">
+                            <img src="{% static 'img/icons/c-map.png' %}" alt="">
+                            <div class="info-text">
+                                <span class="block">Abuja, Nigeria</span>
+                                <span class="block">Wuse 2</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-contact-info">
+                        <div class="contents">
+                            <img src="{% static 'img/icons/c-phone.png' %}" alt="">
+                            <div class="info-text">
+                                <span class="block">Telephone: +2348067766435</span>
+                                <span class="block">Alternative: +2348057777085</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-contact-info">
+                        <div class="contents">
+                            <img src="{% static 'img/icons/c-globe.png' %}" alt="">
+                            <div class="info-text">
+                                <span class="block">Email: info@karimandassociates.org</span>
+                                <span class="block">Web: www.karimandassociates.org</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="contact-form-area fix pb-120">
+    <div class="container">
+        <div class="contact-form-left">
+            <h4 class="details-title">Leave a Message</h4>
+            <form id="contact-form" action="https://htmldemo.net/financo/financo/contact-mail.php" method="post">
+                <input type="text" name="name" placeholder="Your name">
+                <input type="text" name="email" placeholder="Email here">
+                <textarea name="message" cols="30" rows="10" placeholder="Write here"></textarea>
+                <div class="w-100 fix">
+                    <button type="submit" class="default-button submit-btn">SUBMIT</button>
+                </div>
+                <p class="form-messege"></p>
+            </form>
+        </div>
+        <div class="contact-form-right">
+            <div class="single-sidebar-widget fix bg-8">
+                <div class="sidebar-contact-info">
+                    <h4>Need Support?</h4>
+                    <p>Send a short brief of your training or consultancy needs and our team will respond with a proposed scope and timeline.</p>
+                    <a href="{% url 'core:contact' %}" class="default-button">Contact</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

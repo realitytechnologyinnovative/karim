@@ -1,0 +1,108 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Services | Karim &amp; Associates{% endblock %}
+{% block meta_description %}Explore Karim &amp; Associates services in training, advisory, governance, risk, and organizational development.{% endblock %}
+{% block content %}
+{% include "partials/breadcrumbs.html" with heading="SERVICES" only %}
+
+<div class="service-main-area-2 pt-100 pb-105 bg-rotate-2">
+    <div class="service-banner">
+        <div class="container">
+            <div class="service-banner-left">
+                <img src="{% static 'img/banner/3.png' %}" alt="">
+            </div>
+            <div class="service-banner-right">
+                <div class="information-text">
+                    <h3><span>What we deliver</span></h3>
+                    <h2>Customized Training And Consultancy Solutions</h2>
+                    <p>We support organizations with practical, outcome-focused programs designed around their specific needs, sector realities, and performance goals.</p>
+                    <p>From technical accounting subjects to leadership and governance, our engagements are structured for measurable results.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="service-area pt-105">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+                    <div class="section-title text-center mb-55">
+                        <h2>Service Pillars</h2>
+                        <p>Our multidisciplinary portfolio covers both technical and strategic capacity-building needs.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-item single-service">
+                        <div class="service-item-image"><img src="{% static 'img/service/1.jpg' %}" alt=""></div>
+                        <div class="service-text">
+                            <h4>Accounting, Audit &amp; Finance</h4>
+                            <p>Financial reporting, audit and assurance, tax management, and financial advisory services.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-item single-service">
+                        <div class="service-item-image"><img src="{% static 'img/service/2.jpg' %}" alt=""></div>
+                        <div class="service-text">
+                            <h4>Management Consultancy</h4>
+                            <p>Strategic management, leadership development, operational efficiency, and organizational transformation.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-item single-service">
+                        <div class="service-item-image"><img src="{% static 'img/service/3.jpg' %}" alt=""></div>
+                        <div class="service-text">
+                            <h4>Human Capital Development</h4>
+                            <p>Talent development, employee engagement, communication training, and workforce optimization.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-item single-service">
+                        <div class="service-item-image"><img src="{% static 'img/service/4.jpg' %}" alt=""></div>
+                        <div class="service-text">
+                            <h4>Governance &amp; Compliance</h4>
+                            <p>Corporate governance, regulatory compliance, anti-corruption frameworks, and ethics training.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-item single-service">
+                        <div class="service-item-image"><img src="{% static 'img/service/1.jpg' %}" alt=""></div>
+                        <div class="service-text">
+                            <h4>Risk, Projects &amp; Digital</h4>
+                            <p>Risk management, project delivery support, process automation, and digital capability development.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-item single-service">
+                        <div class="service-item-image"><img src="{% static 'img/service/2.jpg' %}" alt=""></div>
+                        <div class="service-text">
+                            <h4>Specialized Programs</h4>
+                            <p>Procurement and supply chain, ESG, entrepreneurship support, and executive study tours.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="advertise-area bg-2 overlay-green">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+                <div class="advertise-text text-white text-center">
+                    <h2>Need A Tailored Program?</h2>
+                    <p>Tell us your objectives and we will design a practical training or consultancy engagement aligned to your context.</p>
+                    <a href="{% url 'core:contact' %}" class="default-button btn-white">CONTACT US</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

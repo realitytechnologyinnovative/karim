@@ -1,0 +1,79 @@
+{% load static %}
+<div class="footer-widget-area bg-4 overlay-blue pt-110 pb-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-3 col-lg-3 col-md-6 col-12 order-md-1 order-1">
+                <div class="single-footer-widget">
+                    <div class="footer-logo">
+                        <a href="{% url 'core:home' %}"><img src="{% static 'img/logo/footer-logo.png' %}" alt="Karim and Associates"></a>
+                    </div>
+                    <p>Karim &amp; Associates Limited delivers accredited training and consultancy services across accounting, finance, management, governance, and human capital development.</p>
+                    <form action="#" id="mc-form" class="mc-form fix">
+                        <div class="subscribe-form">
+                            <input id="mc-email" type="email" name="email" placeholder="Email for Newsletter">
+                            <button id="mc-submit" type="submit"><i class="fa fa-send"></i></button>
+                        </div>
+                    </form>
+                    <div class="mailchimp-alerts text-centre fix text-small">
+                        <div class="mailchimp-submitting"></div>
+                        <div class="mailchimp-success"></div>
+                        <div class="mailchimp-error"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 col-12 order-md-3 order-2">
+                <div class="single-footer-widget mt-sm-30">
+                    <h3>WHY US</h3>
+                    <div class="footer-widget-content">
+                        <h5>Client-centric delivery</h5>
+                        <span>Customized programs designed from real organizational needs.</span>
+                    </div>
+                    <div class="footer-widget-content">
+                        <h5>Experienced faculty</h5>
+                        <span>A multidisciplinary team of academics and seasoned practitioners.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 col-12 order-md-2 order-3">
+                <div class="single-footer-widget">
+                    <h3>QUICK LINKS</h3>
+                    <ul class="footer-list">
+                        <li><a href="{% url 'core:about' %}">About us</a></li>
+                        <li><a href="{% url 'core:team' %}">Team</a></li>
+                        <li><a href="{% url 'services:list' %}">Services</a></li>
+                        <li><a href="{% url 'projects:list' %}">Projects</a></li>
+                        <li><a href="{% url 'core:contact' %}">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 col-12 order-md-4 order-4">
+                <div class="single-footer-widget mt-sm-30">
+                    <h3>CONTACT US</h3>
+                    <div class="footer-contact-info">
+                        <img src="{% static 'img/icons/f-map.png' %}" alt="">
+                        <span class="block">Plot 1015 Gwandal Centre, Fria Close,<br>Off Customs Close, Wuse 2, Abuja</span>
+                    </div>
+                    <div class="footer-contact-info">
+                        <img src="{% static 'img/icons/f-phone.png' %}" alt="">
+                        <span class="block">Telephone: +2348067766435, +2348057777085</span>
+                    </div>
+                    <div class="footer-contact-info">
+                        <img src="{% static 'img/icons/f-globe.png' %}" alt="">
+                        <span class="block">Email: info@karimandassociates.org</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="footer-area bg-blue text-center ptb-30">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="footer-text">
+                    <span class="block">Copyright &copy; {% now "Y" %} Karim &amp; Associates Limited. All rights reserved.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
